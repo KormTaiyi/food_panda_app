@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_panda_clone/pages/home_page.dart';
 import 'package:food_panda_clone/pages/location_page.dart';
 
 class SignupPage extends StatelessWidget {
@@ -138,7 +139,12 @@ class SignupPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 20),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => HomePage()),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       minimumSize: const Size(double.infinity, 60),
                       backgroundColor: const Color(0xFFFF2B85),

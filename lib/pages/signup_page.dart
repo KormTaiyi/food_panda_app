@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_panda_clone/pages/home_page.dart';
 import 'package:food_panda_clone/pages/location_page.dart';
+import 'package:food_panda_clone/pages/main_page.dart';
 
 class SignupPage extends StatelessWidget {
   const SignupPage({super.key});
@@ -142,7 +142,7 @@ class SignupPage extends StatelessWidget {
                     onPressed: () {
                       Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (context) => HomePage()),
+                        MaterialPageRoute(builder: (context) => MainPage()),
                       );
                     },
                     style: ElevatedButton.styleFrom(
